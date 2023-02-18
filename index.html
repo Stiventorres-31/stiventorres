@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="estilos/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- MENÚ ENCABEZADO-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">STIVEN</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portafolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenido-img">
+                <img src="img/hero.png" alt="">
+            </div>
+            <h1>Stiven Torres</h1>
+            <h2>Desarrollador de Software</h2>
+            <div class="redes">
+                <!-- <a href="#"><i class="fa-brands fa-facebook-f"></i></a> -->
+                <a href="https://www.linkedin.com/in/stiven-torres-97866a262/" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Stiventorres-31" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre mí</h2>
+            <p>Hola, mi nombres es <span> Stiven Torres</span> y soy una persona proactiva, organizada y responsable.
+                Cuento con amplios conocimientos en diseño y desarrollo de aplicaciones de escritorio, página
+                web,aplicaciones móviles y mantenimiento de equipos cómputos.</p>
+
+            <div class="fila">
+                <!-- DATOS PERSONALES -->
+                <div class="col">
+                    <h3>Datos personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            31 de enero 2000
+                        </li>
+                        <li>
+                            <strong>Telefono</strong>
+                            +57 (301) 6086845
+                        </li>
+                        <li>
+                            <strong>Correo</strong>
+                            torresmendozastiven@gmail.com
+                        </li>
+                    </ul>
+                </div>
+                <!---  INTERESES -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>Juegos</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>Musica</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>Viajar</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS-->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- TECHNICAL SKILL-->
+                <div class="col">
+                    <h3>Technical skill</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Php</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- PROFESSIONAL SKILLS-->
+                <div class="col">
+                    <h3>Professional skills</h3>
+                    <div class="skill">
+                        <span>Comunicacion</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Institución universitaria ITSA</h4>
+                        <span class="casa">Tecnólogo profesional en Gestión de Sistemas Informatico</span>
+                        <span class="fecha">Cursando actualmente</span>
+                        <p></p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Institución universitaria ITSA</h4>
+                        <span class="casa">Técnico profesional en Sistemas Informatico</span>
+                        <span class="fecha">2020-2022</span>
+                        <p>Graduado con honores académicos</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Industrial y Aviación Sena</h4>
+                        <span class="casa">Técnico en programación de Software,</span>
+                        <span class="fecha">2018-2019</span>
+                        <p>Graduado con honores académicos</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Sitic</h4>
+                        <span class="casa">Mantenimiento de hardware y software</span>
+                        <span class="fecha">Desde 1 de agosto del 2021 – hasta el 28 de febrero 2022.</span>
+                        <p>Tipo de contrato: Prestación de servicio.</p>
+                        <p>Funciones: Mantenimiento correctivo y preventivo de equipos computos, atención al cliente y
+                            diseño y desarrollo de página web.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Servicios integrales del atlantico SIA S.A.S</h4>
+                        <span class="casa">Manejo de bases de datos</span>
+                        <span class="fecha">Desde 13 de noviembre del 2018 – hasta el 11 de mayo 2019.</span>
+                        <p>Tipo de contrato: Practicante.</p>
+                        <p>Funciones: Digitarzar información a la base de datos.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <!-- <div class="item der">
+                        <h4>Arte y Multimedia</h4>
+                        <span class="casa">Universidad de oxford</span>
+                        <span class="fecha">2019-2022</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit odit culpa eaque esse
+                            deserunt eius ex suscipit. Quia, voluptatem aperiam quam enim asperiores blanditiis unde ad
+                            at quisquam ipsum? Ex?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portafolio" class="portafolio">
+        <div class="contenido-seccion">
+            <h2>Portafolio</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/angular.png" alt="">
+                    <div class="overlay">
+                        <h3>Desarrollo Web</h3>
+                        <p>Angular</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/fondo.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño creativo</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/fondo.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño creativo</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>Contacto</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú nombre">
+                    <input type="text" placeholder="Número de telefono">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Barranquilla 123
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile"></i>
+                                301 6086845
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                torresmendozastiven@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION FOOTER -->
+
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <!-- <a href="#"><i class="fa-brands fa-facebook-f"></i></a> -->
+            <a href="https://www.linkedin.com/in/stiven-torres-97866a262/" target="_blank"><i
+                    class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/Stiventorres-31" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
